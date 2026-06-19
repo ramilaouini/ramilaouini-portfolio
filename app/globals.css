@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: theme("colors.base.DEFAULT");
+    color: theme("colors.ink.DEFAULT");
+  }
+
+  ::selection {
+    background-color: theme("colors.accent.violet");
+    color: white;
+  }
+
+  /* Visible keyboard focus everywhere, even outside the Button component */
+  :focus-visible {
+    outline: 2px solid theme("colors.accent.violet");
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Slim, low-contrast scrollbar that fits the dark glass aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
