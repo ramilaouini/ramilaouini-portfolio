@@ -24,7 +24,7 @@ export function About() {
 
             <Reveal delay={0.08}>
               <GlassCard className="mt-8 px-6 py-5">
-                <p className="font-mono text-xs text-accent-teal">// mission</p>
+                <p className="font-mono text-xs text-accent-teal">{"// mission"}</p>
                 <p className="mt-2 text-base text-ink sm:text-lg">{PERSONAL.mission}</p>
               </GlassCard>
             </Reveal>

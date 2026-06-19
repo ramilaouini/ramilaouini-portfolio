@@ -107,7 +107,7 @@ export function Contact() {
 
           <Reveal delay={0.1}>
             <GlassCard className="flex h-full flex-col gap-3 p-6 sm:p-8">
-              <p className="font-mono text-xs text-ink-muted">// elsewhere</p>
+              <p className="font-mono text-xs text-ink-muted">{"// elsewhere"}</p>
               {SOCIAL_LINKS.map((social) => (
                 <a
                   key={social.label}
